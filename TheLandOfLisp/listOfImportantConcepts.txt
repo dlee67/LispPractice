@@ -1,0 +1,17 @@
+function - well, function
+
+let - Something that innitializes the variable.
+
+terpri - a new line generator for the standard output
+
+setq - innitialize a new value to the variable.
+
+quoting - return the passed in argument as the string.
+
+if - logical branch, but whatelse?
+
+eq - equivalent logic when compared to == in C or Java.
+
+car - list stuff
+
+cdr - list stuff

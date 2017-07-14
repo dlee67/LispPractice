@@ -1,0 +1,107 @@
+There isn't a such thing called identifier in lisp, but they have things symbols,
+where symbols are literally a legitament data type.
+
+There are two special symbols where they have special meaning of their own.
+
+T for truth
+NIL for false
+
+which is a functionality of Lisp that is a 1 to 1 contrast with other languages.
+
+
+
+There are category of functions called predicates, which is a question answering function.
+
+The built in functions are called primitive functions, or primitives.
+
+
+#()
+
+the line above is a vector...
+
+and seems like the white spaces are the delimeters.
+
+
+lists are defined with parenthesis; thus, ( is the representation of the opening of the list,
+and ) is the end of the list.
+
+princ is a function that will take in a lisp object, and print it out to the standard output.
+
+
+;;About the if function 
+(if T (princ "true") (princ "false"))
+
+if functions are forced to have 2 branches, one for true, and one for false.
+
+;;About lisp, anything that is not nil, then it's true
+
+meaning, (if 5 (princ "Hi") (princ "bye"))
+
+5 is recognized as a true value.
+
+;;-------------------------------------------------
+
+let operator(it's not a function for some strange reason) makes a variable for me, 
+
+
+Seems like I am forced to write everything in a single list; meaning,
+
+(let x 5)
+(princ x)
+
+;;The above two lines will cause an error that notifies the user that x is not defined
+
+
+(let ((x 5)) (princ x))
+;;If I want to print out the value of x, and print it out, I have to write it like above.
+
+
+(terpri) ;; There is something called terpri, and it is use to generate a new line into a
+	 ;; standard console output.
+
+Just like any languages I have played around so far, variables can also be no innitialized, 
+which looks very much like (let a)
+
+In lisp, the let operation can be combined with *, which enables a innitialized variables
+to be seen to other innitialized variables.
+;;For example.
+(let* ((x 5) (y x)))
+x shouldn't be visible to y without let*
+
+There is also a function called setq, which is usually implemented in this manner.
+
+(let (x) ;as of now, x does not have any values assigned to them
+   (setq x 5) ;and right at this moment, x is now assigned with 5
+   )	
+
+
+#|This is a block comment in lisp, which is equivalent with the /**/ in other languges |#
+
+
+
+In the world of lisp, functions are defined in this way,
+
+(defun functionName (argument) (operation))
+
+But really, between the arugment and the operation,
+
+I can have many as operations I can have.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+There is also something called quote, which is a lisp function, and it takes anything into the argument, and returns the string form of the object; meaning,
+
+(princ (+ 1 2))
+
+It's a lisp convention that words are separated by the -(dashes).
+
+In order for me to check the condition of things, seems like I use eq keyword.
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+
+A Gentle Introduction To Symbolic Computation 
+
+- does not seem to have elaborative code examples; thus, a suggestive method should be learning Lisp by using text as the guidance, and 
+finding how to code through the internet.
