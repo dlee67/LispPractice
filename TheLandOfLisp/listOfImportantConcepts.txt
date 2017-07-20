@@ -15,3 +15,33 @@ eq - equivalent logic when compared to == in C or Java.
 car - list stuff
 
 cdr - list stuff
+
+Nothing beyond from this point is common occurance in the languages I've seen so far.
+Applicative programming.
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+#' <- that should be applied with the 
+
+funcall - returns the "actual" functoin.
+
+mapcar - for a given function, applies the function's operation on every elements in the list.
+
+We are heading into the world of Lambda.
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+lambda - Substitution for the function that needs to be passed in after being defined, next to #'
+
+find-if - it's also an applicative function, but it seems to be one of the most powerful tool in the combination with Lambda
+
+equal - the function is introduced in page 218
+
+find-if has a twin brother called...
+remove-if - and it's the vice versa of the find-if.
+
+reduce - is also an applicative opreation, but it's so contrasting to the previous concepts I've learned in 
+other languages, I really should just go over it.
+
+every - is also an applicative function, where a particular operation is applied on every elements on the list.
+
+Now going over to the concepts of recursion.
+///////////////////////////////////////////////////////////////////////////////////////////////
