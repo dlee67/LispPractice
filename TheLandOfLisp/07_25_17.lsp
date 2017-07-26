@@ -1,0 +1,6 @@
+(defun addOne (x)
+	(+ x 1))
+(setq Li (list 1 2 3 4 5))
+(princ (mapcar #'addOne Li))
+(terpri)
+(princ (find-if #'(lambda (x) (> x 3)) '(1 2 3 4 5)))

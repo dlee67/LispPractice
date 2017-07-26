@@ -41,7 +41,8 @@ remove-if - and it's the vice versa of the find-if.
 reduce - is also an applicative opreation, but it's so contrasting to the previous concepts I've learned in 
 other languages, I really should just go over it.
 
-every - is also an applicative function, where a particular operation is applied on every elements on the list.
+every - is also an applicative function, where a particular operation is applied on every elements on the list,
+but, only T or NIL is returned, after seeing if every elements satisfies some conditions.
 
 Now going over to the concepts of recursion.
 ///////////////////////////////////////////////////////////////////////////////////////////////

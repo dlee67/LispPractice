@@ -1,0 +1,11 @@
+(princ "Starting practice")
+(terpri)
+;;
+(princ (mapcar #'(lambda (x) (+ x 1)) '(1 2 3 4 5 6 7)))
+(terpri)
+(princ "using find if ... ")
+(princ (find-if #'(lambda (x) (eq x 3)) '(1 2 3 4)))
+(terpri)
+(princ "using reduce applicative function ... ")
+(princ (reduce #'+ '(1 2 4)))
+(terpri)
