@@ -46,3 +46,10 @@ but, only T or NIL is returned, after seeing if every elements satisfies some co
 
 Now going over to the concepts of recursion.
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+By the way, lisp function returns values by default; meaning,
+
+(defun someFunction ()
+	5)
+	
+someFunction() will return 5.
